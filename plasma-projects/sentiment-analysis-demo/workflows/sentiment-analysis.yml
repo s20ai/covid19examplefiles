@@ -1,0 +1,26 @@
+name: Sentiment Analysis Demo
+description: Sentiment Analysis Demo Pipeline
+version: 0.1
+workflow:
+  data_fetcher:
+    top_words: 1000
+  data_preprocessor:
+    max_review_length: 80
+    X_train: X_train
+    X_test: X_test
+  model_trainer:
+    X_train: X_train
+    X_test: X_test
+    y_train: y_train
+    y_test: y_test
+    batch_size: 12
+    epochs: 1
+    units: 64
+    top_words: 1000
+    max_review_length: 80
+    num_classes: 2
+  model_evaluator:
+    model: model
+    X_test: X_train
+    y_test: y_test
+    batch_size: 32

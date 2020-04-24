@@ -1,0 +1,52 @@
+S3 Connector Component
+
+The S3 connector component allows your workflows
+to interact with AWS s3 buckets and use them as
+an object DB.
+
+
+Usage : 
+
+To use this component in a workflow configure your workflow.yaml
+
+
+# Downloading a file
+
+S3-Connector:
+        - aws_secret_key: <your_secret_key>
+        - aws_access_key: <your_access_key>
+        - download:
+                - bucket_name: <your_bucket_name>
+                - file_name: <your_file_name>
+                - file_path: <your_file_path>
+                - output_path: <output_path>
+
+# Uploading a file
+
+S3-Connector:
+        - aws_secret_key: <your_secret_key>
+        - aws_access_key: <your_access_key>
+        - upload:
+                - bucket_name: <your_bucket_name>
+                - file_name: <your_file_name>
+                - file_path: <your_file_path>
+
+# Listing files
+
+S3-Connector:
+        - aws_secret_key: <your_secret_key>
+        - aws_access_key: <your_access_key>
+        - list_files:
+                - bucket_name: <your_bucket_name>
+
+
+# Deleting Files
+
+S3-Connector:
+        - aws_secret_key: <your_secret_key>
+        - aws_access_key: <your_access_key>
+        - list_files:
+                - bucket_name: <your_bucket_name>
+                - file_name: <your_file_name>
+                - file_version: <your_file_version>
+

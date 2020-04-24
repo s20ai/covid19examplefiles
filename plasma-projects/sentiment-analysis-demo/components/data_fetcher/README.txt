@@ -1,0 +1,1 @@
+The component is used to fetch the data from the keras datastore

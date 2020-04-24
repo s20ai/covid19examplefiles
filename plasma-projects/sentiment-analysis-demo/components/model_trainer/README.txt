@@ -1,0 +1,1 @@
+The component contains the defined architecture for sentiment analysis using a LSTM classifier and train the model accordingly

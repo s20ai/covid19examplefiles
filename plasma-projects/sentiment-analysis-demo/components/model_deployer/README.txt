@@ -1,0 +1,1 @@
+This is a flask component to deploy the trained model and query it through a web server
