@@ -1,1 +1,0 @@
-the component utilises the trained model to evaluate the performance by certain measures like accuracy and loss on the preprocessed validation dataset
